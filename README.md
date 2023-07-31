@@ -30,7 +30,7 @@ pip install -r requirements.txt
    |-------ped2  
    |----------testing  
    |----------training  
-   |----------ped2.mat
+   |----------ped2.mat  
    |---weights
 
 ## Inference with pre-trained weights
