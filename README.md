@@ -6,7 +6,7 @@ This repository contains the official implementation of FastAno (2022 WACV) [[Pa
 
 ![architecture](https://github.com/codnjsqkr/FastAno_official/assets/60251992/6a2e5570-2a3b-4c6c-8777-5d0113f4c8ba)
 
- We propose a new method called Fast Adaptive Patch Memory (FAPM) for real-time industrial anomaly detection. FAPM utilizes patch-wise and layer-wise memory banks that store the embedding features of images at the patch and layer level, respectively, which eliminates unnecessary repetitive computations. We also propose patch-wise adaptive coreset sampling for faster and more accurate detection. 
+We propose spatial rotation transformation (SRT) and temporal mixing transformation (TMT) to generate irregular patch cuboids within normal frame cuboids in order to enhance the learning of normal features. Additionally, the proposed patch transformation is used only during the training phase, allowing our model to detect abnormal frames at fast speed during inference. Our model is evaluated on three anomaly detection benchmarks, achieving competitive accuracy and surpassing all the previous works in terms of speed.
 
 ## Development setup
 
