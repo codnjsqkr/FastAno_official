@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ```
 ## Dataset preparation
-1. Create [data] folder inside FastAno_official
+1. Create [data] folder inside FastAno_official 
 2. Download UCSD Ped2 dataset from this [website](http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm) and place it in [data] folder.
 3. The folder structure should look like this:  
    | Fastano_official  
