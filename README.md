@@ -1,5 +1,8 @@
-# Fastano_official
-This repository contains the implementation of Fastano (2022 WACV).
+# FastAno: Fast Fast Anomaly Detection via Spatio-temporal Patch Transformation (2022 WACV)
+
+Authors: [Chaewon Park](https://github.com/codnjsqkr), Myeong Ah Cho, [Minhyeok Lee](https://github.com/Hydragon516), Sangyoun Lee
+
+This repository contains the official implementation of Fastano (2022 WACV).
 
 https://openaccess.thecvf.com/content/WACV2022/html/Park_FastAno_Fast_Anomaly_Detection_via_Spatio-Temporal_Patch_Transformation_WACV_2022_paper.html
 
