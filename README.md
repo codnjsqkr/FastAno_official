@@ -11,7 +11,7 @@ We propose spatial rotation transformation (SRT) and temporal mixing transformat
 
 ## Development setup
 
-conda environment
+- conda environment
 ```sh
 git clone https://github.com/codnjsqkr/FastAno_official.git
 conda create -n fastano python=3.7.9
@@ -32,8 +32,8 @@ pip install -r requirements.txt
 
 ## Inference with pre-trained weights
 
-Pre-trained weights trained on UCSD Ped2 is located in Fastano/weights/ped2_best.pth  
-Inference code
+- Pre-trained weights trained on UCSD Ped2 is located in Fastano/weights/ped2_best.pth  
+- Inference code
 ```sh
 python main.py
 ```
