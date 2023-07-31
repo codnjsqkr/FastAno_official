@@ -5,7 +5,8 @@ Authors: [Chaewon Park](https://github.com/codnjsqkr), Myeong Ah Cho, [Minhyeok 
 This repository contains the official implementation of FastAno (2022 WACV) [[Paper link]](https://openaccess.thecvf.com/content/WACV2022/html/Park_FastAno_Fast_Anomaly_Detection_via_Spatio-Temporal_Patch_Transformation_WACV_2022_paper.html)  
 The inference code and our pre-trained weights are available. 
 
-![architecture](https://github.com/codnjsqkr/FastAno_official/assets/60251992/6a2e5570-2a3b-4c6c-8777-5d0113f4c8ba)
+![architecture](https://github.com/codnjsqkr/FastAno_official/assets/60251992/6a2e5570-2a3b-4c6c-8777-5d0113f4c8ba)  
+![speed](https://github.com/codnjsqkr/FastAno_official/assets/60251992/9a798b61-15d5-42e6-bcb8-81efab9f97b6)
 
 We propose spatial rotation transformation (SRT) and temporal mixing transformation (TMT) to generate irregular patch cuboids within normal frame cuboids in order to enhance the learning of normal features. Additionally, the proposed patch transformation is used only during the training phase, allowing our model to detect abnormal frames at fast speed during inference. Our model is evaluated on three anomaly detection benchmarks, achieving competitive accuracy and surpassing all the previous works in terms of speed.
 
