@@ -8,7 +8,7 @@ The inference code and our pre-trained weights are available.
 ![architecture](https://github.com/codnjsqkr/FastAno_official/assets/60251992/6a2e5570-2a3b-4c6c-8777-5d0113f4c8ba)
 We propose spatial rotation transformation (SRT) and temporal mixing transformation (TMT) to generate irregular patch cuboids within normal frame cuboids in order to enhance the learning of normal features. Additionally, the proposed patch transformation is used only during the training phase, allowing our model to detect abnormal frames at fast speed during inference. Our model is evaluated on three anomaly detection benchmarks, achieving competitive accuracy and surpassing all the previous works in terms of speed.
 <p align="center">
-<img src="https://github.com/codnjsqkr/FastAno_official/assets/60251992/3587085a-4087-47e7-aa0e-47a1720d4e9f.png" width="800" height="500"/>
+<img src="https://github.com/codnjsqkr/FastAno_official/assets/60251992/a58ad240-8010-4db1-a27e-7336fee82948.png" width="800" height="500"/>
 </p>
 
 ## Development setup
