@@ -13,14 +13,13 @@ This repository contains the official implementation of Fastano (2022 WACV) [[Pa
 conda environment
 ```sh
 git clone https://github.com/codnjsqkr/FastAno_official.git
-conda create -n FAPM
-conda activate FAPM
-
+conda create -n fastano python=3.7.9
+conda activate fastano
 pip install -r requirements.txt
 
 ```
 ## Dataset
-Please download UCSD Ped2 dataset from this [website](https://www.mvtec.com/company/research/datasets/mvtec-ad).
+Please download UCSD Ped2 dataset from this [website](http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm).
 
 ## Usage
 
