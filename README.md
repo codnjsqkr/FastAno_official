@@ -30,10 +30,10 @@ pip install -r requirements.txt
    |----------training  
    |----------ped2.mat
 
-## Usage
+## Inference with pre-trained weights
 
 Pre-trained weights trained on UCSD Ped2 is located in Fastano/weights/ped2_best.pth  
--Inference code
+Inference code
 ```sh
 python main.py
 ```
