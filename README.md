@@ -3,6 +3,7 @@
 Authors: [Chaewon Park](https://github.com/codnjsqkr), Myeong Ah Cho, [Minhyeok Lee](https://github.com/Hydragon516), Sangyoun Lee
 
 This repository contains the official implementation of FastAno (2022 WACV) [[Paper link]](https://openaccess.thecvf.com/content/WACV2022/html/Park_FastAno_Fast_Anomaly_Detection_via_Spatio-Temporal_Patch_Transformation_WACV_2022_paper.html)
+Running the inference code for our pre-trained model is available. 
 
 ![architecture](https://github.com/codnjsqkr/FastAno_official/assets/60251992/6a2e5570-2a3b-4c6c-8777-5d0113f4c8ba)
 
@@ -31,6 +32,7 @@ pip install -r requirements.txt
 
 ## Usage
 
+Pre-trained weights trained on UCSD Ped2 is located in Fastano/weights/ped2_best.pth
 Inference Code
 ```sh
 python main.py
