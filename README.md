@@ -10,7 +10,7 @@ We propose spatial rotation transformation (SRT) and temporal mixing transformat
 <p align="center">
 <img src="https://github.com/codnjsqkr/FastAno_official/assets/60251992/a58ad240-8010-4db1-a27e-7336fee82948.png" width="750" height="500"/>
 </p>
-Our inference speed is obtained by running FP32 model using a single Nvidia GeForce RTX 3090 without GPU warm-up. The FPS was computed by measuring the time from data preprocessing to calculating AUROC after all data had passed through the model, and then dividing it by the total number of frames in the test data folder.
+Our inference speed is obtained by running FP32 model using a single Nvidia GeForce RTX 3090 without GPU warm-up. The FPS was computed by measuring the time from data preprocessing to calculating AUROC after all data had passed through the model, and then dividing it by the total number of frames in the test data folder. This process is also found in the code.
 
 ## Development setup
 
