@@ -1,4 +1,8 @@
 # FastAno: Fast Fast Anomaly Detection via Spatio-temporal Patch Transformation (2022 WACV)
+.center {
+  display: block;
+  margin: auto;
+}
 
 Authors: [Chaewon Park](https://github.com/codnjsqkr), Myeong Ah Cho, [Minhyeok Lee](https://github.com/Hydragon516), Sangyoun Lee
 
