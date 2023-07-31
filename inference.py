@@ -22,12 +22,18 @@ def evaluation(test_loader, model1, dataset, video):
     task = tqdm(test_loader)
     score_group = []
     score=[]
+    scores = np.array([], dtype=np.float64)
+    labels = np.array([], dtype=np.int8)
     num=1
     criterionL2 = torch.nn.MSELoss()   
     video_folders = os.listdir("./data/%s/testing/frames/"%(dataset))
     video_folders.sort()
     video_folders = [os.path.join("./data/%s/testing/frames/"%(dataset), vid) for vid in video_folders]
+
+    starter, ender = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
     start = time.time()
+    starter.record()
+
     with torch.no_grad():
         for i, data in enumerate(task):
             aug_img, real_img, clip_name = data
@@ -50,9 +56,6 @@ def evaluation(test_loader, model1, dataset, video):
     gt = gt_loader()
     assert len(score_group) == len(gt), f'Ground truth has {len(gt)} videos, but got {len(score_group)} detected videos.'
 
-    scores = np.array([], dtype=np.float64)
-    labels = np.array([], dtype=np.int8)
-
     for i in range(len(score_group)):
             distance = score_group[i]
             max_d = max(distance)
@@ -65,9 +68,10 @@ def evaluation(test_loader, model1, dataset, video):
         f'Ground truth has {labels.shape[0]} frames, but got {scores.shape[0]} detected frames.'
     try:
         fpr, tpr, thresholds = metrics.roc_curve(labels, scores, pos_label=0) 
-        auc = metrics.auc(fpr, tpr)
-        end = time.time()
-        print("Fps:", total_frame/(end-start))
-
+        auc = metrics.auc(fpr, tpr)       
+        ender.record() 
+        torch.cuda.synchronize()
+        inference_time = starter.elapsed_time(ender)*1e-3 
+        print("FPS:", total_frame/inference_time) 
     except: print("error")
     return auc         
